@@ -17,7 +17,7 @@ from .console import (
     audio_channel_id, video_channel_id, api_key
 )
 from .database import audio_db, video_db, main_client
-from .plugins.mp3_functions import mp3_from_search, mp3_from_youtube_id
+#from .plugins.mp3_functions import mp3_from_search, mp3_from_youtube_id
 
 bot = Client(
     "ERAAPI",
@@ -292,5 +292,6 @@ async def start_message_private(client, message):
 
 if __name__ == "__main__":
     uvicorn.run("Erixter:app", host="0.0.0.0", port=5000, reload=False)
+
 
 
