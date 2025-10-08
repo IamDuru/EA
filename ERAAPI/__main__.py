@@ -13,7 +13,7 @@ from urllib.parse import urlparse, parse_qs
 from motor.motor_asyncio import AsyncIOMotorClient
 from youtubesearchpython.__future__ import VideosSearch
 from .console import (
-    api_id, api_hash, bot_token, owener_id,
+    api_id, api_hash, bot_token, owner_id,
     audio_channel_id, video_channel_id, api_key
 )
 from .database import audio_db, video_db, main_client
@@ -292,4 +292,5 @@ async def start_message_private(client, message):
 
 if __name__ == "__main__":
     uvicorn.run("Erixter:app", host="0.0.0.0", port=5000, reload=False)
+
 
