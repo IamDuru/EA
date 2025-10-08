@@ -3,9 +3,9 @@ from logging.handlers import RotatingFileHandler
 
 
 
-api_id = int(os.getenv("API_ID", 0))
-api_hash = os.getenv("API_HASH", "")
-bot_token = os.getenv("BOT_TOKEN", "")
+api_id = int(os.getenv("API_ID", 25742938))
+api_hash = os.getenv("API_HASH", "b35b715fe8dc0a58e8048988286fc5b6")
+bot_token = os.getenv("BOT_TOKEN", "8430511080:AAGxkZcpX_jqK-6A-wtlqed-jASZ-Lm_bnA")
 owner_id = int(os.getenv("OWNER_ID", 7616808278))
 
 audio_channel_id = int(os.getenv("AUDIO_CHANNEL_ID", 0))
@@ -15,9 +15,9 @@ channel_id = int(os.getenv("CHANNEL_ID", 0))
 # space separated IDs → list of ints
 sudo_users = list(map(int, os.getenv("SUDO_USERS", "0").split()))
 
-main_mongo_url = os.getenv("MAIN_MONGO_URL", "")
+main_mongo_url = os.getenv("MAIN_MONGO_URL", "mongodb+srv://BADMUNDA:BADMYDAD@badhacker.i5nw9na.mongodb.net/")
 db_name = os.getenv("DB_NAME", "eravibesdb")
-api_key = os.getenv("API_KEY", "")
+api_key = os.getenv("API_KEY", "BADAPI")
 
 
 
@@ -40,4 +40,5 @@ logging.getLogger("pyrogram").setLevel(logging.ERROR)
 
 def logs(name: str) -> logging.Logger:
     return logging.getLogger(name)
+
 
