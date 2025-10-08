@@ -6,7 +6,7 @@ from logging.handlers import RotatingFileHandler
 api_id = int(os.getenv("API_ID", 0))
 api_hash = os.getenv("API_HASH", "")
 bot_token = os.getenv("BOT_TOKEN", "")
-owner_id = int(os.getenv("OWNER_ID", 0))
+owner_id = int(os.getenv("OWNER_ID", 7616808278))
 
 audio_channel_id = int(os.getenv("AUDIO_CHANNEL_ID", 0))
 video_channel_id = int(os.getenv("VIDEO_CHANNEL_ID", 0))
@@ -40,3 +40,4 @@ logging.getLogger("pyrogram").setLevel(logging.ERROR)
 
 def logs(name: str) -> logging.Logger:
     return logging.getLogger(name)
+
