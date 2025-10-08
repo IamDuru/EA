@@ -1,0 +1,55 @@
+{
+  "name": "YouTube Music Bot API",
+  "description": "A FastAPI application that searches and downloads YouTube content, then uploads to Telegram channels",
+  "keywords": ["fastapi", "telegram", "youtube", "bot", "api", "music", "video"],
+  "repository": "https://github.com/IamElite/YAPI01",
+  "success_url": "/",
+  "stack": "container",
+  "env": {
+    "API_ID": {
+      "description": "Your Telegram API ID from https://my.telegram.org/",
+      "value": "12380656",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Your Telegram API Hash from https://my.telegram.org/",
+      "value": "d927c13beaaf5110f25c505b7c071273",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Your Telegram Bot Token from @BotFather",
+      "value": "8338434628:AAEzS-HWrwgdZABdu595O4yeNrmyvdxoVpM",
+      "required": true
+    },
+    "AUDIO_CHANNEL_ID": {
+      "description": "Telegram channel ID for audio uploads (e.g., -1001234567890)",
+      "value": "-1002539844745",
+      "required": true
+    },
+    "VIDEO_CHANNEL_ID": {
+      "description": "Telegram channel ID for video uploads (e.g., -1001234567890)",
+      "value": "-1003023100740",
+      "required": true
+    },
+    "MONGO_URL": {
+      "description": "MongoDB connection URL (e.g., mongodb+srv://username:password@cluster.mongodb.net/database)",
+      "value": "mongodb+srv://ar:durgesh@ar.yqov3el.mongodb.net/?retryWrites=true&w=majority&appName=ar",
+      "required": true
+    },
+    "UPSTREAM_REPO": {
+      "description": "If you dont know this, Leave as it is",
+      "value": "https://github.com/IamElite/YAPI01",
+      "required": true
+    },
+    "UPSTREAM_BRANCH": {
+      "description": "Upstream Repo's Branch Name",
+      "value": "main",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
