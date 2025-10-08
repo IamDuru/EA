@@ -291,4 +291,5 @@ async def start_message_private(client, message):
 
 
 if __name__ == "__main__":
-    uvicorn.run("Erixter:app", host="0.0.0.0", port=1489, reload=False)
+    uvicorn.run("Erixter:app", host="0.0.0.0", port=5000, reload=False)
+
