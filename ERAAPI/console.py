@@ -1,20 +1,24 @@
-import logging
+import logging, os
 from logging.handlers import RotatingFileHandler
 
 
 
-api_id = 12380656
-api_hash = "d927c13beaaf5110f25c505b7c071273"
-bot_token = "your_bot_token"
-owener_id = 1679112664
-audio_channel_id = -1001942636044
-video_channel_id = -1001942636044
-channel_id = -1003015175237
-sudo_users = [7615306685]
+api_id = int(os.getenv("API_ID", 0))
+api_hash = os.getenv("API_HASH", "")
+bot_token = os.getenv("BOT_TOKEN", "")
+owner_id = int(os.getenv("OWNER_ID", 0))
 
-main_mongo_url = "your_mongo_db_url"
-db_name = "eravibesdb"
-api_key = "your_api_key_here"
+audio_channel_id = int(os.getenv("AUDIO_CHANNEL_ID", 0))
+video_channel_id = int(os.getenv("VIDEO_CHANNEL_ID", 0))
+channel_id = int(os.getenv("CHANNEL_ID", 0))
+
+# space separated IDs → list of ints
+sudo_users = list(map(int, os.getenv("SUDO_USERS", "0").split()))
+
+main_mongo_url = os.getenv("MAIN_MONGO_URL", "")
+db_name = os.getenv("DB_NAME", "eravibesdb")
+api_key = os.getenv("API_KEY", "")
+
 
 
 
