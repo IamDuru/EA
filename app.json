@@ -1,0 +1,19 @@
+{
+  "name": "YouTube Music Bot API",
+  "description": "A FastAPI application that searches and downloads YouTube content, then uploads to Telegram channels",
+  "keywords": ["fastapi", "telegram", "youtube", "bot", "api", "music", "video"],
+  "repository": "https://github.com/IamElite/YA",
+  "success_url": "/",
+  "stack": "container",
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "Standard-2X"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
